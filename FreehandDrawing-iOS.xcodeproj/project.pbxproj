@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4712795D1B0CE98400A49B7E /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712795C1B0CE98400A49B7E /* DrawView.swift */; };
+		47919A441B0CE08600D7BFE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47919A431B0CE08600D7BFE9 /* AppDelegate.swift */; };
+		47919A461B0CE08600D7BFE9 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47919A451B0CE08600D7BFE9 /* DrawViewController.swift */; };
+		47919A491B0CE08600D7BFE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47919A471B0CE08600D7BFE9 /* Main.storyboard */; };
+		47919A4B1B0CE08600D7BFE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47919A4A1B0CE08600D7BFE9 /* Images.xcassets */; };
+		47919A4E1B0CE08600D7BFE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47919A4C1B0CE08600D7BFE9 /* LaunchScreen.xib */; };
+		47919A5A1B0CE08600D7BFE9 /* FreehandDrawing_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47919A591B0CE08600D7BFE9 /* FreehandDrawing_iOSTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47919A541B0CE08600D7BFE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47919A361B0CE08600D7BFE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47919A3D1B0CE08600D7BFE9;
+			remoteInfo = "FreehandDrawing-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4712795C1B0CE98400A49B7E /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		47919A3E1B0CE08600D7BFE9 /* FreehandDrawing-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreehandDrawing-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47919A421B0CE08600D7BFE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47919A431B0CE08600D7BFE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47919A451B0CE08600D7BFE9 /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		47919A481B0CE08600D7BFE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47919A4A1B0CE08600D7BFE9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		47919A4D1B0CE08600D7BFE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		47919A531B0CE08600D7BFE9 /* FreehandDrawing-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FreehandDrawing-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47919A581B0CE08600D7BFE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47919A591B0CE08600D7BFE9 /* FreehandDrawing_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreehandDrawing_iOSTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47919A3B1B0CE08600D7BFE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47919A501B0CE08600D7BFE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4712795E1B0CE98D00A49B7E /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				47919A431B0CE08600D7BFE9 /* AppDelegate.swift */,
+				47919A451B0CE08600D7BFE9 /* DrawViewController.swift */,
+				4712795C1B0CE98400A49B7E /* DrawView.swift */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		47919A351B0CE08600D7BFE9 = {
+			isa = PBXGroup;
+			children = (
+				47919A401B0CE08600D7BFE9 /* FreehandDrawing-iOS */,
+				47919A561B0CE08600D7BFE9 /* FreehandDrawing-iOSTests */,
+				47919A3F1B0CE08600D7BFE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47919A3F1B0CE08600D7BFE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47919A3E1B0CE08600D7BFE9 /* FreehandDrawing-iOS.app */,
+				47919A531B0CE08600D7BFE9 /* FreehandDrawing-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47919A401B0CE08600D7BFE9 /* FreehandDrawing-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4712795E1B0CE98D00A49B7E /* Code */,
+				47919A4A1B0CE08600D7BFE9 /* Images.xcassets */,
+				47919A4C1B0CE08600D7BFE9 /* LaunchScreen.xib */,
+				47919A471B0CE08600D7BFE9 /* Main.storyboard */,
+				47919A411B0CE08600D7BFE9 /* Supporting Files */,
+			);
+			path = "FreehandDrawing-iOS";
+			sourceTree = "<group>";
+		};
+		47919A411B0CE08600D7BFE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47919A421B0CE08600D7BFE9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47919A561B0CE08600D7BFE9 /* FreehandDrawing-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				47919A591B0CE08600D7BFE9 /* FreehandDrawing_iOSTests.swift */,
+				47919A571B0CE08600D7BFE9 /* Supporting Files */,
+			);
+			path = "FreehandDrawing-iOSTests";
+			sourceTree = "<group>";
+		};
+		47919A571B0CE08600D7BFE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47919A581B0CE08600D7BFE9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47919A3D1B0CE08600D7BFE9 /* FreehandDrawing-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47919A5D1B0CE08600D7BFE9 /* Build configuration list for PBXNativeTarget "FreehandDrawing-iOS" */;
+			buildPhases = (
+				47919A3A1B0CE08600D7BFE9 /* Sources */,
+				47919A3B1B0CE08600D7BFE9 /* Frameworks */,
+				47919A3C1B0CE08600D7BFE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FreehandDrawing-iOS";
+			productName = "FreehandDrawing-iOS";
+			productReference = 47919A3E1B0CE08600D7BFE9 /* FreehandDrawing-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47919A521B0CE08600D7BFE9 /* FreehandDrawing-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47919A601B0CE08600D7BFE9 /* Build configuration list for PBXNativeTarget "FreehandDrawing-iOSTests" */;
+			buildPhases = (
+				47919A4F1B0CE08600D7BFE9 /* Sources */,
+				47919A501B0CE08600D7BFE9 /* Frameworks */,
+				47919A511B0CE08600D7BFE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47919A551B0CE08600D7BFE9 /* PBXTargetDependency */,
+			);
+			name = "FreehandDrawing-iOSTests";
+			productName = "FreehandDrawing-iOSTests";
+			productReference = 47919A531B0CE08600D7BFE9 /* FreehandDrawing-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47919A361B0CE08600D7BFE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = badoo;
+				TargetAttributes = {
+					47919A3D1B0CE08600D7BFE9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					47919A521B0CE08600D7BFE9 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 47919A3D1B0CE08600D7BFE9;
+					};
+				};
+			};
+			buildConfigurationList = 47919A391B0CE08600D7BFE9 /* Build configuration list for PBXProject "FreehandDrawing-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47919A351B0CE08600D7BFE9;
+			productRefGroup = 47919A3F1B0CE08600D7BFE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47919A3D1B0CE08600D7BFE9 /* FreehandDrawing-iOS */,
+				47919A521B0CE08600D7BFE9 /* FreehandDrawing-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47919A3C1B0CE08600D7BFE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47919A491B0CE08600D7BFE9 /* Main.storyboard in Resources */,
+				47919A4E1B0CE08600D7BFE9 /* LaunchScreen.xib in Resources */,
+				47919A4B1B0CE08600D7BFE9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47919A511B0CE08600D7BFE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47919A3A1B0CE08600D7BFE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47919A461B0CE08600D7BFE9 /* DrawViewController.swift in Sources */,
+				47919A441B0CE08600D7BFE9 /* AppDelegate.swift in Sources */,
+				4712795D1B0CE98400A49B7E /* DrawView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47919A4F1B0CE08600D7BFE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47919A5A1B0CE08600D7BFE9 /* FreehandDrawing_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47919A551B0CE08600D7BFE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47919A3D1B0CE08600D7BFE9 /* FreehandDrawing-iOS */;
+			targetProxy = 47919A541B0CE08600D7BFE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47919A471B0CE08600D7BFE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47919A481B0CE08600D7BFE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47919A4C1B0CE08600D7BFE9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47919A4D1B0CE08600D7BFE9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47919A5B1B0CE08600D7BFE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47919A5C1B0CE08600D7BFE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47919A5E1B0CE08600D7BFE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "FreehandDrawing-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47919A5F1B0CE08600D7BFE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "FreehandDrawing-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		47919A611B0CE08600D7BFE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FreehandDrawing-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreehandDrawing-iOS.app/FreehandDrawing-iOS";
+			};
+			name = Debug;
+		};
+		47919A621B0CE08600D7BFE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FreehandDrawing-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreehandDrawing-iOS.app/FreehandDrawing-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47919A391B0CE08600D7BFE9 /* Build configuration list for PBXProject "FreehandDrawing-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47919A5B1B0CE08600D7BFE9 /* Debug */,
+				47919A5C1B0CE08600D7BFE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47919A5D1B0CE08600D7BFE9 /* Build configuration list for PBXNativeTarget "FreehandDrawing-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47919A5E1B0CE08600D7BFE9 /* Debug */,
+				47919A5F1B0CE08600D7BFE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47919A601B0CE08600D7BFE9 /* Build configuration list for PBXNativeTarget "FreehandDrawing-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47919A611B0CE08600D7BFE9 /* Debug */,
+				47919A621B0CE08600D7BFE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47919A361B0CE08600D7BFE9 /* Project object */;
+}
