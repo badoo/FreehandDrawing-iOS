@@ -93,14 +93,16 @@ class DrawView : UIView {
     }
     
     private func continueAtPoint(point: CGPoint) {
-        // 2. Draw the current stroke in an accumulated bitmap
-        self.buffer = self.drawLine(self.lastPoint, b: point, buffer: self.buffer)
-        
-        // 3. Replace the layer contents with the updated image
-        self.layer.contents = self.buffer?.CGImage ?? nil
-        
-        // 4. Update last point for next stroke
-        self.lastPoint = point
+        autoreleasepool {
+            // 2. Draw the current stroke in an accumulated bitmap
+            self.buffer = self.drawLine(self.lastPoint, b: point, buffer: self.buffer)
+            
+            // 3. Replace the layer contents with the updated image
+            self.layer.contents = self.buffer?.CGImage ?? nil
+            
+            // 4. Update last point for next stroke
+            self.lastPoint = point
+        }
     }
     
     private func endAtPoint(point: CGPoint) {
