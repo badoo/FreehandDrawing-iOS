@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4712795D1B0CE98400A49B7E /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712795C1B0CE98400A49B7E /* DrawView.swift */; };
+		47702F9F1B0E448800417ACF /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47702F9E1B0E448800417ACF /* Toolbar.swift */; };
+		47702FA11B0E452100417ACF /* Toolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47702FA01B0E452100417ACF /* Toolbar.xib */; };
 		47919A441B0CE08600D7BFE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47919A431B0CE08600D7BFE9 /* AppDelegate.swift */; };
 		47919A461B0CE08600D7BFE9 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47919A451B0CE08600D7BFE9 /* DrawViewController.swift */; };
 		47919A491B0CE08600D7BFE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47919A471B0CE08600D7BFE9 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		4712795C1B0CE98400A49B7E /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		47702F9E1B0E448800417ACF /* Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		47702FA01B0E452100417ACF /* Toolbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Toolbar.xib; sourceTree = "<group>"; };
 		47919A3E1B0CE08600D7BFE9 /* FreehandDrawing-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreehandDrawing-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47919A421B0CE08600D7BFE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47919A431B0CE08600D7BFE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				47919A431B0CE08600D7BFE9 /* AppDelegate.swift */,
 				47919A451B0CE08600D7BFE9 /* DrawViewController.swift */,
 				4712795C1B0CE98400A49B7E /* DrawView.swift */,
+				47702F9E1B0E448800417ACF /* Toolbar.swift */,
+				47702FA01B0E452100417ACF /* Toolbar.xib */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 				47919A491B0CE08600D7BFE9 /* Main.storyboard in Resources */,
 				47919A4E1B0CE08600D7BFE9 /* LaunchScreen.xib in Resources */,
 				47919A4B1B0CE08600D7BFE9 /* Images.xcassets in Resources */,
+				47702FA11B0E452100417ACF /* Toolbar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +233,7 @@
 				47919A461B0CE08600D7BFE9 /* DrawViewController.swift in Sources */,
 				47919A441B0CE08600D7BFE9 /* AppDelegate.swift in Sources */,
 				4712795D1B0CE98400A49B7E /* DrawView.swift in Sources */,
+				47702F9F1B0E448800417ACF /* Toolbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

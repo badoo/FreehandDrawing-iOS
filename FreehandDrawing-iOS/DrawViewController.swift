@@ -25,6 +25,18 @@ THE SOFTWARE.
 import UIKit
 
 class DrawViewController: UIViewController {
-
+    
+    
+    override func viewDidLoad() {
+        self.toolbar.colorChangeHandler = { color in
+            self.drawView.drawColor = color
+        }
+    }
+    
+    
+    var drawView: DrawView {
+        return self.view as! DrawView
+    }
+    @IBOutlet var toolbar: Toolbar!
 }
 
