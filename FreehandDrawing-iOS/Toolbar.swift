@@ -81,8 +81,8 @@ class Toolbar : UIView {
     }
     
     @objc private func handleTap(sender: UITapGestureRecognizer) {
-        if let view = sender.view {
-            self.colorChangeHandler?(view.backgroundColor ?? UIColor.blackColor())
+        if sender.state == .Ended {
+            self.colorChangeHandler?(sender.view?.backgroundColor ?? UIColor.blackColor())
         }
     }
     
