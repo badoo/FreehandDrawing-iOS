@@ -10,20 +10,20 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4K-Q7-6O9">
-                    <rect key="frame" x="434" y="16" width="48" height="48"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v4K-Q7-6O9">
+                    <rect key="frame" x="442" y="19" width="44" height="44"/>
                     <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L75-iP-5nx">
-                    <rect key="frame" x="512" y="16" width="48" height="48"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L75-iP-5nx">
+                    <rect key="frame" x="516" y="19" width="44" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="48" id="LcY-Xj-Nwh"/>
-                        <constraint firstAttribute="height" constant="48" id="pkX-6f-0cV"/>
+                        <constraint firstAttribute="width" constant="44" id="LcY-Xj-Nwh"/>
+                        <constraint firstAttribute="height" constant="44" id="pkX-6f-0cV"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0L8-d7-abR">
-                    <rect key="frame" x="356" y="16" width="48" height="48"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0L8-d7-abR">
+                    <rect key="frame" x="368" y="19" width="44" height="44"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.035351606610000003" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
             </subviews>
@@ -34,11 +34,11 @@
                 <constraint firstItem="0L8-d7-abR" firstAttribute="centerY" secondItem="v4K-Q7-6O9" secondAttribute="centerY" id="Ee9-kP-nkR"/>
                 <constraint firstItem="0L8-d7-abR" firstAttribute="height" secondItem="v4K-Q7-6O9" secondAttribute="height" id="J6U-bW-hdD"/>
                 <constraint firstItem="L75-iP-5nx" firstAttribute="height" secondItem="v4K-Q7-6O9" secondAttribute="height" id="PJ4-Os-mZO"/>
-                <constraint firstAttribute="trailing" secondItem="L75-iP-5nx" secondAttribute="trailing" constant="40" id="SLm-Ge-EfH"/>
-                <constraint firstItem="L75-iP-5nx" firstAttribute="leading" secondItem="v4K-Q7-6O9" secondAttribute="trailing" constant="30" id="Z7Z-yg-psY"/>
+                <constraint firstAttribute="trailing" secondItem="L75-iP-5nx" secondAttribute="trailing" constant="20" id="SLm-Ge-EfH"/>
+                <constraint firstItem="L75-iP-5nx" firstAttribute="leading" secondItem="v4K-Q7-6O9" secondAttribute="trailing" constant="20" id="Z7Z-yg-psY"/>
                 <constraint firstAttribute="centerY" secondItem="L75-iP-5nx" secondAttribute="centerY" id="hqU-7u-2N4"/>
                 <constraint firstItem="0L8-d7-abR" firstAttribute="width" secondItem="v4K-Q7-6O9" secondAttribute="width" id="uDg-G8-vKG"/>
-                <constraint firstItem="v4K-Q7-6O9" firstAttribute="leading" secondItem="0L8-d7-abR" secondAttribute="trailing" constant="30" id="yAp-rd-xzU"/>
+                <constraint firstItem="v4K-Q7-6O9" firstAttribute="leading" secondItem="0L8-d7-abR" secondAttribute="trailing" constant="20" id="yAp-rd-xzU"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
