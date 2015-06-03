@@ -16,6 +16,9 @@
 		47919A4B1B0CE08600D7BFE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47919A4A1B0CE08600D7BFE9 /* Images.xcassets */; };
 		47919A4E1B0CE08600D7BFE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47919A4C1B0CE08600D7BFE9 /* LaunchScreen.xib */; };
 		47919A5A1B0CE08600D7BFE9 /* FreehandDrawing_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47919A591B0CE08600D7BFE9 /* FreehandDrawing_iOSTests.swift */; };
+		47D780891B1F1A9900076BD6 /* DrawCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D780881B1F1A9900076BD6 /* DrawCommands.swift */; };
+		47D7808C1B1F1D0100076BD6 /* LineDrawCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7808B1B1F1D0100076BD6 /* LineDrawCommand.swift */; };
+		47D7808F1B1F1D1400076BD6 /* CircleDrawCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7808E1B1F1D1400076BD6 /* CircleDrawCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		47919A531B0CE08600D7BFE9 /* FreehandDrawing-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FreehandDrawing-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47919A581B0CE08600D7BFE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47919A591B0CE08600D7BFE9 /* FreehandDrawing_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreehandDrawing_iOSTests.swift; sourceTree = "<group>"; };
+		47D780881B1F1A9900076BD6 /* DrawCommands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawCommands.swift; sourceTree = "<group>"; };
+		47D7808B1B1F1D0100076BD6 /* LineDrawCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineDrawCommand.swift; sourceTree = "<group>"; };
+		47D7808E1B1F1D1400076BD6 /* CircleDrawCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleDrawCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 			children = (
 				47919A431B0CE08600D7BFE9 /* AppDelegate.swift */,
 				47919A451B0CE08600D7BFE9 /* DrawViewController.swift */,
+				47D7808A1B1F1CE700076BD6 /* DrawCommands */,
 				4712795C1B0CE98400A49B7E /* DrawView.swift */,
 				47702F9E1B0E448800417ACF /* Toolbar.swift */,
 				47702FA01B0E452100417ACF /* Toolbar.xib */,
@@ -127,6 +134,16 @@
 				47919A581B0CE08600D7BFE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47D7808A1B1F1CE700076BD6 /* DrawCommands */ = {
+			isa = PBXGroup;
+			children = (
+				47D780881B1F1A9900076BD6 /* DrawCommands.swift */,
+				47D7808B1B1F1D0100076BD6 /* LineDrawCommand.swift */,
+				47D7808E1B1F1D1400076BD6 /* CircleDrawCommand.swift */,
+			);
+			name = DrawCommands;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +248,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				47919A461B0CE08600D7BFE9 /* DrawViewController.swift in Sources */,
+				47D7808F1B1F1D1400076BD6 /* CircleDrawCommand.swift in Sources */,
 				47919A441B0CE08600D7BFE9 /* AppDelegate.swift in Sources */,
+				47D780891B1F1A9900076BD6 /* DrawCommands.swift in Sources */,
+				47D7808C1B1F1D0100076BD6 /* LineDrawCommand.swift in Sources */,
 				4712795D1B0CE98400A49B7E /* DrawView.swift in Sources */,
 				47702F9F1B0E448800417ACF /* Toolbar.swift in Sources */,
 			);
