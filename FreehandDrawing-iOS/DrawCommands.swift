@@ -31,3 +31,7 @@ protocol Canvas {
 protocol DrawCommand {
     func execute(canvas: Canvas)
 }
+
+protocol DrawCommandReceiver {
+    func executeCommand(command: DrawCommand)
+}

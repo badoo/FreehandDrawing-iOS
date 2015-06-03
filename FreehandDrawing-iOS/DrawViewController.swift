@@ -26,17 +26,20 @@ import UIKit
 
 class DrawViewController: UIViewController {
     
-    
     override func viewDidLoad() {
+        self.drawController = FreehandDrawController(canvas: self.drawView, view: self.drawView)
+        self.drawController.width = 10.0
+        
         self.toolbar.colorChangeHandler = { color in
-            self.drawView.drawColor = color
+            self.drawController.color = color
         }
     }
-    
     
     var drawView: DrawView {
         return self.view as! DrawView
     }
+    
+    private var drawController: FreehandDrawController!
     @IBOutlet var toolbar: Toolbar!
 }
 

@@ -19,6 +19,7 @@
 		47D780891B1F1A9900076BD6 /* DrawCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D780881B1F1A9900076BD6 /* DrawCommands.swift */; };
 		47D7808C1B1F1D0100076BD6 /* LineDrawCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7808B1B1F1D0100076BD6 /* LineDrawCommand.swift */; };
 		47D7808F1B1F1D1400076BD6 /* CircleDrawCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7808E1B1F1D1400076BD6 /* CircleDrawCommand.swift */; };
+		47D780931B1F238300076BD6 /* FreehandDrawController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D780921B1F238300076BD6 /* FreehandDrawController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		47D780881B1F1A9900076BD6 /* DrawCommands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawCommands.swift; sourceTree = "<group>"; };
 		47D7808B1B1F1D0100076BD6 /* LineDrawCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineDrawCommand.swift; sourceTree = "<group>"; };
 		47D7808E1B1F1D1400076BD6 /* CircleDrawCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleDrawCommand.swift; sourceTree = "<group>"; };
+		47D780921B1F238300076BD6 /* FreehandDrawController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreehandDrawController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +74,10 @@
 			isa = PBXGroup;
 			children = (
 				47919A431B0CE08600D7BFE9 /* AppDelegate.swift */,
-				47919A451B0CE08600D7BFE9 /* DrawViewController.swift */,
 				47D7808A1B1F1CE700076BD6 /* DrawCommands */,
 				4712795C1B0CE98400A49B7E /* DrawView.swift */,
+				47919A451B0CE08600D7BFE9 /* DrawViewController.swift */,
+				47D780921B1F238300076BD6 /* FreehandDrawController.swift */,
 				47702F9E1B0E448800417ACF /* Toolbar.swift */,
 				47702FA01B0E452100417ACF /* Toolbar.xib */,
 			);
@@ -253,6 +256,7 @@
 				47D780891B1F1A9900076BD6 /* DrawCommands.swift in Sources */,
 				47D7808C1B1F1D0100076BD6 /* LineDrawCommand.swift in Sources */,
 				4712795D1B0CE98400A49B7E /* DrawView.swift in Sources */,
+				47D780931B1F238300076BD6 /* FreehandDrawController.swift in Sources */,
 				47702F9F1B0E448800417ACF /* Toolbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

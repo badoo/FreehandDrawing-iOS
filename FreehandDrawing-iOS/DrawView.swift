@@ -24,40 +24,24 @@ THE SOFTWARE.
 
 import UIKit
 
-class DrawView : UIView {
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.setupGestureRecognizers()
+class DrawView : UIView, Canvas, DrawCommandReceiver {
+    
+    // MARK: Canvas
+    
+    var context: CGContextRef {
+        return UIGraphicsGetCurrentContext()
     }
     
-    // MARK: Drawing a path
+    // MARK: DrawCommandReceiver
     
-    private func drawLine(a: CGPoint, b: CGPoint, buffer: UIImage?) -> UIImage {
-        let image = drawInContext { context in
-            // Draw the line
-            self.drawColor.setStroke()
-            CGContextSetLineWidth(context, self.drawWidth)
-            CGContextSetLineCap(context, kCGLineCapRound)
+    func executeCommand(command: DrawCommand) {
+        autoreleasepool {
+            self.buffer = drawInContext { context in
+                command.execute(self)
+            }
             
-            CGContextMoveToPoint(context, a.x, a.y)
-            CGContextAddLineToPoint(context, b.x, b.y)
-            CGContextStrokePath(context)
+            self.layer.contents = self.buffer?.CGImage ?? nil
         }
-        
-        return image
-    }
-    
-    // MARK: Drawing a point
-    
-    private func drawPoint(at: CGPoint, buffer: UIImage?) -> UIImage {
-        let image = drawInContext { context in
-            // Draw the point
-            self.drawColor.setFill()
-            let circle = UIBezierPath(arcCenter: at, radius: self.drawWidth / 2.0, startAngle: 0, endAngle: 2 * CGFloat(M_PI), clockwise: true)
-            circle.fill()
-        }
-        
-        return image
     }
     
     // MARK: General setup to draw. Reusing a buffer and returning a new one
@@ -86,74 +70,5 @@ class DrawView : UIView {
         return image
     }
     
-    // MARK: Gestures
-    
-    private func setupGestureRecognizers() {
-        // Pan gesture recognizer to track lines
-        let panRecognizer = UIPanGestureRecognizer(target: self, action: "handlePan:")
-        self.addGestureRecognizer(panRecognizer)
-        
-        // Tap gesture recognizer to track points
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
-        self.addGestureRecognizer(tapRecognizer)
-    }
-    
-    @objc private func handlePan(sender: UIPanGestureRecognizer) {
-        let point = sender.locationInView(self)
-        switch sender.state {
-        case .Began:
-            self.startAtPoint(point)
-        case .Changed:
-            self.continueAtPoint(point)
-        case .Ended:
-            self.endAtPoint(point)
-        case .Failed:
-            self.endAtPoint(point)
-        default:
-            assert(false, "State not handled")
-        }
-    }
-    
-    @objc private func handleTap(sender: UITapGestureRecognizer) {
-        let point = sender.locationInView(self)
-        if sender.state == .Ended {
-            self.tapAtPoint(point)
-        }
-    }
-    
-    // MARK: Tracing a line
-    
-    private func startAtPoint(point: CGPoint) {
-        self.lastPoint = point
-    }
-    
-    private func continueAtPoint(point: CGPoint) {
-        autoreleasepool {
-            // Draw the current stroke in an accumulated bitmap
-            // Then replace layer contents with the updated image
-            self.buffer = self.drawLine(self.lastPoint, b: point, buffer: self.buffer)
-            self.layer.contents = self.buffer?.CGImage ?? nil
-            
-            self.lastPoint = point
-        }
-    }
-    
-    private func endAtPoint(point: CGPoint) {
-        self.lastPoint = CGPointZero
-    }
-    
-    // MARK: Tracking a point
-    
-    private func tapAtPoint(point: CGPoint) {
-        autoreleasepool {
-            self.buffer = self.drawPoint(point, buffer: self.buffer)
-            self.layer.contents = self.buffer?.CGImage ?? nil
-        }
-    }
-    
-    var drawColor: UIColor = UIColor.blackColor()
-    var drawWidth: CGFloat = 10.0
-    
-    private var lastPoint: CGPoint = CGPointZero
     private var buffer: UIImage?
 }
