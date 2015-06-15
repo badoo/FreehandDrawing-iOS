@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -26,12 +26,26 @@
                     <rect key="frame" x="356" y="16" width="48" height="48"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.035351606610000003" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agr-xx-Fzd">
+                    <rect key="frame" x="40" y="18" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Qqi-in-yNv"/>
+                        <constraint firstAttribute="width" constant="44" id="b4J-dz-21G"/>
+                    </constraints>
+                    <state key="normal" title="Undo">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="undo" destination="iN0-l3-epB" eventType="touchUpInside" id="NB1-fH-G4a"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="L75-iP-5nx" firstAttribute="width" secondItem="v4K-Q7-6O9" secondAttribute="width" id="0qv-QT-qyR"/>
                 <constraint firstItem="L75-iP-5nx" firstAttribute="centerY" secondItem="v4K-Q7-6O9" secondAttribute="centerY" id="4i2-9z-WNX"/>
                 <constraint firstItem="0L8-d7-abR" firstAttribute="centerY" secondItem="v4K-Q7-6O9" secondAttribute="centerY" id="Ee9-kP-nkR"/>
+                <constraint firstItem="agr-xx-Fzd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="Eis-rR-Zxp"/>
                 <constraint firstItem="0L8-d7-abR" firstAttribute="height" secondItem="v4K-Q7-6O9" secondAttribute="height" id="J6U-bW-hdD"/>
                 <constraint firstItem="L75-iP-5nx" firstAttribute="height" secondItem="v4K-Q7-6O9" secondAttribute="height" id="PJ4-Os-mZO"/>
                 <constraint firstAttribute="trailing" secondItem="L75-iP-5nx" secondAttribute="trailing" constant="40" id="SLm-Ge-EfH"/>
@@ -39,6 +53,7 @@
                 <constraint firstAttribute="centerY" secondItem="L75-iP-5nx" secondAttribute="centerY" id="hqU-7u-2N4"/>
                 <constraint firstItem="0L8-d7-abR" firstAttribute="width" secondItem="v4K-Q7-6O9" secondAttribute="width" id="uDg-G8-vKG"/>
                 <constraint firstItem="v4K-Q7-6O9" firstAttribute="leading" secondItem="0L8-d7-abR" secondAttribute="trailing" constant="30" id="yAp-rd-xzU"/>
+                <constraint firstAttribute="centerY" secondItem="agr-xx-Fzd" secondAttribute="centerY" id="yr7-Dz-xGS"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

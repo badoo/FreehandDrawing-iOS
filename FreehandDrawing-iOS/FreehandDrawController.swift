@@ -19,6 +19,16 @@ class FreehandDrawController : NSObject {
         self.setupGestureRecognizersInView(view)
     }
     
+    // MARK: API
+    
+    func undo() {
+        if self.commandQueue.count > 0{
+            self.commandQueue.removeLast()
+            self.canvas.reset()
+            self.canvas.executeCommands(self.commandQueue)
+        }
+    }
+    
     // MARK: Gestures
     
     private func setupGestureRecognizersInView(view: UIView) {
@@ -63,7 +73,7 @@ class FreehandDrawController : NSObject {
     private func continueAtPoint(point: CGPoint) {
         let lineCommand = LineDrawCommand(a: self.lastPoint, b: point, width: self.width, color: self.color)
         
-        self.canvas.executeCommand(lineCommand)
+        self.canvas.executeCommands([lineCommand])
         self.commandQueue.append(lineCommand)
         
         self.lastPoint = point
@@ -75,7 +85,7 @@ class FreehandDrawController : NSObject {
     
     private func tapAtPoint(point: CGPoint) {
         let circleCommand = CircleDrawCommand(center: point, radius: self.width/2.0, color: self.color)
-        self.canvas.executeCommand(circleCommand)
+        self.canvas.executeCommands([circleCommand])
         self.commandQueue.append(circleCommand)
     }
     

@@ -33,6 +33,10 @@ class DrawViewController: UIViewController {
         self.toolbar.colorChangeHandler = { [unowned self] color in
             self.drawController.color = color
         }
+        
+        self.toolbar.undoHandler = { [unowned self] in
+            self.drawController.undo()
+        }
     }
     
     var drawView: DrawView {

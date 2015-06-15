@@ -26,6 +26,7 @@ import UIKit
 
 protocol Canvas {
     var context: CGContext {get}
+    func reset()
 }
 
 protocol DrawCommand {
@@ -33,5 +34,5 @@ protocol DrawCommand {
 }
 
 protocol DrawCommandReceiver {
-    func executeCommand(command: DrawCommand)
+    func executeCommands(commands: [DrawCommand])
 }

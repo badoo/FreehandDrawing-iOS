@@ -32,12 +32,17 @@ class DrawView : UIView, Canvas, DrawCommandReceiver {
         return UIGraphicsGetCurrentContext()
     }
     
+    func reset() {
+        self.buffer = nil
+        self.layer.contents = nil
+    }
+    
     // MARK: DrawCommandReceiver
     
-    func executeCommand(command: DrawCommand) {
+    func executeCommands(commands: [DrawCommand]) {
         autoreleasepool {
             self.buffer = drawInContext { context in
-                command.execute(self)
+                commands.map { $0.execute(self) }
             }
             
             self.layer.contents = self.buffer?.CGImage ?? nil

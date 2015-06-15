@@ -26,7 +26,7 @@ import UIKit
 
 class Toolbar : UIView {
     typealias ColorChangeHandler = UIColor -> Void
-    
+    typealias UndoHandler = Void->Void
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -86,8 +86,12 @@ class Toolbar : UIView {
         }
     }
     
-    var colorChangeHandler: ColorChangeHandler?
+    @IBAction private func undo() {
+        self.undoHandler?()
+    }
     
+    var colorChangeHandler: ColorChangeHandler?
+    var undoHandler: UndoHandler?
     
     @IBOutlet var color1: UIView!
     @IBOutlet var color2: UIView!
