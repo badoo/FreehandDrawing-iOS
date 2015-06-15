@@ -30,7 +30,7 @@ class DrawViewController: UIViewController {
         self.drawController = FreehandDrawController(canvas: self.drawView, view: self.drawView)
         self.drawController.width = 10.0
         
-        self.toolbar.colorChangeHandler = { color in
+        self.toolbar.colorChangeHandler = { [unowned self] color in
             self.drawController.color = color
         }
     }
