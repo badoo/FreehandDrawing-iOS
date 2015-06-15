@@ -68,19 +68,25 @@ class FreehandDrawController : NSObject {
     
     private func startAtPoint(point: CGPoint) {
         self.lastPoint = point
+        self.lineStrokeCommand = ComposedCommand(commands: [])
     }
     
     private func continueAtPoint(point: CGPoint) {
         let lineCommand = LineDrawCommand(a: self.lastPoint, b: point, width: self.width, color: self.color)
         
         self.canvas.executeCommands([lineCommand])
-        self.commandQueue.append(lineCommand)
-        
+
+        self.lineStrokeCommand?.addCommand(lineCommand)
         self.lastPoint = point
     }
     
     private func endAtPoint(point: CGPoint) {
+        if let lineStrokeCommand = self.lineStrokeCommand {
+            self.commandQueue.append(lineStrokeCommand)
+        }
+        
         self.lastPoint = CGPointZero
+        self.lineStrokeCommand = nil
     }
     
     private func tapAtPoint(point: CGPoint) {
@@ -90,6 +96,7 @@ class FreehandDrawController : NSObject {
     }
     
     private let canvas: protocol<Canvas, DrawCommandReceiver>
+    private var lineStrokeCommand: ComposedCommand?
     private var commandQueue: Array<DrawCommand> = []
     private var lastPoint: CGPoint = CGPointZero
 }
