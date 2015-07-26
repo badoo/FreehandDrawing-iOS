@@ -28,7 +28,7 @@ class DrawViewController: UIViewController {
     
     override func viewDidLoad() {
         self.drawController = FreehandDrawController(canvas: self.drawView, view: self.drawView)
-        self.drawController.width = 10.0
+        self.drawController.width = 3.0
         
         self.toolbar.colorChangeHandler = { [unowned self] color in
             self.drawController.color = color
