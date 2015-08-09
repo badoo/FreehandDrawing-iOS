@@ -47,7 +47,7 @@ class FreehandDrawController : NSObject {
         case .Began:
             self.startAtPoint(point)
         case .Changed:
-            self.continueAtPoint(point)
+            self.continueAtPoint(point, velocity: sender.velocityInView(sender.view))
         case .Ended:
             self.endAtPoint(point)
         case .Failed:
@@ -71,10 +71,11 @@ class FreehandDrawController : NSObject {
         self.lineStrokeCommand = ComposedCommand(commands: [])
     }
     
-    private func continueAtPoint(point: CGPoint) {
-        let segment = Segment(a: self.lastPoint, b: point, width: self.width)
+    private func continueAtPoint(point: CGPoint, velocity: CGPoint) {
+        let segmentWidth = modulatedWidth(self.width, velocity)
+        let segment = Segment(a: self.lastPoint, b: point, width: segmentWidth)
         
-        let lineCommand = LineDrawCommand(current: segment, previous: lastSegment, width: self.width, color: self.color)
+        let lineCommand = LineDrawCommand(current: segment, previous: lastSegment, width: segmentWidth, color: self.color)
         
         self.canvas.executeCommands([lineCommand])
 
