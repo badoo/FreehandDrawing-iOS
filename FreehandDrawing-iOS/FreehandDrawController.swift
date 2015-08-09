@@ -72,7 +72,7 @@ class FreehandDrawController : NSObject {
     }
     
     private func continueAtPoint(point: CGPoint, velocity: CGPoint) {
-        let segmentWidth = modulatedWidth(self.width, velocity)
+        let segmentWidth = modulatedWidth(self.width, velocity, self.lastVelocity, self.lastWidth ?? self.width)
         let segment = Segment(a: self.lastPoint, b: point, width: segmentWidth)
         
         let lineCommand = LineDrawCommand(current: segment, previous: lastSegment, width: segmentWidth, color: self.color)
@@ -82,6 +82,8 @@ class FreehandDrawController : NSObject {
         self.lineStrokeCommand?.addCommand(lineCommand)
         self.lastPoint = point
         self.lastSegment = segment
+        self.lastVelocity = velocity
+        self.lastWidth = segmentWidth
     }
     
     private func endAtPoint(point: CGPoint) {
@@ -91,6 +93,8 @@ class FreehandDrawController : NSObject {
         
         self.lastPoint = CGPointZero
         self.lastSegment = nil
+        self.lastVelocity = CGPointZero
+        self.lastWidth = nil
         self.lineStrokeCommand = nil
     }
     
@@ -105,4 +109,6 @@ class FreehandDrawController : NSObject {
     private var commandQueue: Array<DrawCommand> = []
     private var lastPoint: CGPoint = CGPointZero
     private var lastSegment: Segment?
+    private var lastVelocity: CGPoint = CGPointZero
+    private var lastWidth: CGFloat?
 }

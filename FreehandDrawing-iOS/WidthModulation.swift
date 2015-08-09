@@ -24,16 +24,32 @@ THE SOFTWARE.
 
 import UIKit
 
-func modulatedWidth(width: CGFloat, velocity: CGPoint) -> CGFloat {
+func modulatedWidth(width: CGFloat, velocity: CGPoint, previousVelocity: CGPoint, previousWidth: CGFloat) -> CGFloat {
     let velocityAdjustement: CGFloat = 600.0
     let speed = velocity.length() / velocityAdjustement
-   
-    let modulated = width / speed
-    return modulated
+    let previousSpeed = previousVelocity.length() / velocityAdjustement
+    
+    let modulated = width / (0.6 * speed + 0.4 * previousSpeed)
+    let limited = clamp(modulated, 0.75 * previousWidth, 1.25 * previousWidth)
+    let final = clamp(limited, 0.2*width, width)
+    
+    return final
 }
 
 extension CGPoint {
     func length() -> CGFloat {
         return sqrt((self.x*self.x) + (self.y*self.y))
     }
+}
+
+func clamp<T: Comparable>(value: T, min: T, max: T) -> T {
+    if (value < min) {
+        return min
+    }
+    
+    if (value > max) {
+        return max
+    }
+    
+    return value
 }
