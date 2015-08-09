@@ -21,6 +21,7 @@
 		47D7808F1B1F1D1400076BD6 /* CircleDrawCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7808E1B1F1D1400076BD6 /* CircleDrawCommand.swift */; };
 		47D780931B1F238300076BD6 /* FreehandDrawController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D780921B1F238300076BD6 /* FreehandDrawController.swift */; };
 		47E090BD1B2F007D002549B2 /* ComposedCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E090BC1B2F007D002549B2 /* ComposedCommand.swift */; };
+		E79E86ED1B66EDB500E319D4 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E86EC1B66EDB500E319D4 /* Segment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		47D7808E1B1F1D1400076BD6 /* CircleDrawCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleDrawCommand.swift; sourceTree = "<group>"; };
 		47D780921B1F238300076BD6 /* FreehandDrawController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreehandDrawController.swift; sourceTree = "<group>"; };
 		47E090BC1B2F007D002549B2 /* ComposedCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposedCommand.swift; sourceTree = "<group>"; };
+		E79E86EC1B66EDB500E319D4 /* Segment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				47D780921B1F238300076BD6 /* FreehandDrawController.swift */,
 				47702F9E1B0E448800417ACF /* Toolbar.swift */,
 				47702FA01B0E452100417ACF /* Toolbar.xib */,
+				E79E86EB1B66EDA300E319D4 /* Utilities */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -150,6 +153,14 @@
 				47E090BC1B2F007D002549B2 /* ComposedCommand.swift */,
 			);
 			name = DrawCommands;
+			sourceTree = "<group>";
+		};
+		E79E86EB1B66EDA300E319D4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E79E86EC1B66EDB500E319D4 /* Segment.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47919A461B0CE08600D7BFE9 /* DrawViewController.swift in Sources */,
+				E79E86ED1B66EDB500E319D4 /* Segment.swift in Sources */,
 				47D7808F1B1F1D1400076BD6 /* CircleDrawCommand.swift in Sources */,
 				47919A441B0CE08600D7BFE9 /* AppDelegate.swift in Sources */,
 				47D780891B1F1A9900076BD6 /* DrawCommands.swift in Sources */,
