@@ -72,7 +72,7 @@ class FreehandDrawController : NSObject {
     }
     
     private func continueAtPoint(point: CGPoint) {
-        let segment = Segment(a: self.lastPoint, b: point)
+        let segment = Segment(a: self.lastPoint, b: point, width: self.width)
         
         let lineCommand = LineDrawCommand(current: segment, previous: lastSegment, width: self.width, color: self.color)
         
